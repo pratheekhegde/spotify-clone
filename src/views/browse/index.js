@@ -53,6 +53,15 @@ const Browse = props =>
                         </NavItem>
                     )}
                 </Route>
+                <Route path="/browse/discover">
+                    {({ match }) => (
+                        <NavItem isActive={match && match.url === '/browse/discover'}>
+                            <NavLink to="/browse/discover">
+                                Discover
+                            </NavLink>
+                        </NavItem>
+                    )}
+                </Route>
             </NavItemList>
         </NavBar>
         <MediaListWrapper>

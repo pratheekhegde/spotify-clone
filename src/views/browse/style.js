@@ -36,12 +36,12 @@ export const NavItem = styled.li`
 export const NavLink = styled(Link)`
     font-size: 12px;
     line-height: 16px;
+    font-weight: 600;
     letter-spacing: .015em;
     color: #b3b3b3;
     text-transform: uppercase;
     letter-spacing: .16em;
     color: #fff;
-    opacity: .6;
     position: relative;
     border: 0;
     display: inline-block;
