@@ -1,12 +1,13 @@
 {
-  "name": "my-razzle-app",
+  "name": "spotify-clone",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "now-start": "yarn start:prod"
   },
   "dependencies": {
     "express": "^4.16.4",
@@ -14,6 +15,7 @@
     "razzle": "^2.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^5.0.0"
   },
   "devDependencies": {

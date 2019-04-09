@@ -57,3 +57,7 @@ export const NavLink = styled(Link)`
         color: white;
     }
 `;
+
+export const MediaListWrapper = styled.section`
+    padding: 30px;
+`;
