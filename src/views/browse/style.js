@@ -59,5 +59,5 @@ export const NavLink = styled(Link)`
 `;
 
 export const MediaListWrapper = styled.section`
-    padding: 30px;
+    padding: 30px 20px;
 `;

@@ -12,4 +12,5 @@ export const MainWrapper = styled.main`
     padding-left: 230px;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
 `;
