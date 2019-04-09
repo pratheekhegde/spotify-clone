@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavBar = styled.nav`
@@ -15,6 +15,22 @@ export const NavItemList = styled.ul`
 export const NavItem = styled.li`
     margin:0;
     display: inline-block;
+    position: relative;
+    ${props =>
+        props.isActive &&
+        css`
+        &::before {
+            content: "";
+            height: 2px;
+            background-color: #1db954;
+            width: 30px;
+            position: absolute;
+            display: block;
+            left: 50%;
+            bottom: 0;
+            margin-left: -15px;
+        }
+    `}
 `
 
 export const NavLink = styled(Link)`
@@ -29,12 +45,15 @@ export const NavLink = styled(Link)`
     position: relative;
     border: 0;
     display: inline-block;
-    margin: 10px;
+    margin: 10px 10px 0;
     padding: 5px 10px;
     text-decoration: none;
     transition: opacity .2s linear;
 
     &:visited {
-    color: white;
-  }
+        color: white;
+    }
+    &:link {
+        color: white;
+    }
 `;

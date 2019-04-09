@@ -2,8 +2,8 @@ import React from 'react';
 import { Route } from "react-router-dom";
 import { Switch, Redirect, withRouter } from "react-router";
 
-import Sidebar from 'components/sidebar';
-import Browse from 'views/browse';
+import Sidebar from '../../components/sidebar';
+import Browse from '../browse';
 import { PlayerViewWrapper, MainWrapper } from './style'
 
 const grad = {
