@@ -16,9 +16,12 @@ export const NavItem = styled.li`
     margin:0;
     display: inline-block;
     position: relative;
+    opacity: .6;
+    transition: opacity .2s linear;
     ${props =>
         props.isActive &&
         css`
+        opacity: 1;
         &::before {
             content: "";
             height: 2px;
